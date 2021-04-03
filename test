@@ -1,0 +1,14 @@
+// PHP Part
+
+<?php
+$ws = "192.168.50.222";
+$output = shell_exec("./test.sh $ws");
+echo "<pre>$output</pre>";
+?>
+
+// Bash Script
+
+#!/bin/bash
+# A simple script
+test=$1
+echo "Hello $test"
